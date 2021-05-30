@@ -10,39 +10,50 @@ body{
     height:100vh;
     text-align: center;
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background:rgb(37, 37, 37)
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='768' preserveAspectRatio='none' viewBox='0 0 1440 768'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1440' height='768' x='0' y='0' fill='%231e3266'%3e%3c/rect%3e%3cpath d='M1512 768L0 768 L0 426.65Q74.97 429.62%2c 72 504.59Q110.04 422.63%2c 192 460.66Q225.26 373.92%2c 312 407.18Q359.19 382.37%2c 384 429.56Q474.81 400.37%2c 504 491.18Q541.54 408.72%2c 624 446.26Q671.04 373.3%2c 744 420.34Q773.24 377.57%2c 816 406.81Q877.55 396.36%2c 888 457.91Q942.39 440.31%2c 960 494.7Q990.56 405.26%2c 1080 435.82Q1134.95 370.77%2c 1200 425.72Q1288.19 393.92%2c 1320 482.11Q1340.3 430.41%2c 1392 450.71Q1433.82 372.52%2c 1512 414.34z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1464 768L0 768 L0 485.41Q96.16 461.57%2c 120 557.72Q189.11 506.83%2c 240 575.94Q273.73 489.67%2c 360 523.4Q387.56 478.96%2c 432 506.52Q513.63 468.15%2c 552 549.79Q595.99 521.78%2c 624 565.77Q644.44 466.21%2c 744 486.65Q787.74 458.38%2c 816 502.12Q904.48 518.6%2c 888 607.08Q886.82 533.9%2c 960 532.72Q1001.49 454.21%2c 1080 495.69Q1133.83 429.51%2c 1200 483.34Q1248.6 459.93%2c 1272 508.53Q1346.41 510.94%2c 1344 585.35Q1409.83 531.18%2c 1464 597.02z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1560 768L0 768 L0 627.24Q48.9 604.14%2c 72 653.04Q126.92 635.96%2c 144 690.89Q147.98 622.87%2c 216 626.85Q257.66 548.51%2c 336 590.18Q426.99 561.16%2c 456 652.15Q528.8 604.95%2c 576 677.75Q613.69 595.44%2c 696 633.14Q750.1 567.24%2c 816 621.33Q863.29 548.62%2c 936 595.91Q1041.28 581.19%2c 1056 686.47Q1082.54 641.01%2c 1128 667.56Q1158.33 577.88%2c 1248 608.21Q1297.47 585.68%2c 1320 635.15Q1396.13 591.27%2c 1440 667.4Q1470.66 578.06%2c 1560 608.72z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1512 768L0 768 L0 718.79Q32.04 678.83%2c 72 710.87Q122.61 689.48%2c 144 740.09Q206.76 730.86%2c 216 793.62Q239.86 697.48%2c 336 721.33Q382.89 696.22%2c 408 743.11Q474.94 738.05%2c 480 804.98Q530.07 735.05%2c 600 785.11Q586.98 700.09%2c 672 687.07Q750.15 693.23%2c 744 771.38Q795.11 750.49%2c 816 801.6Q825.38 738.99%2c 888 748.37Q930.97 671.34%2c 1008 714.31Q1031.69 666%2c 1080 689.7Q1131.44 621.14%2c 1200 672.58Q1250.85 651.43%2c 1272 702.28Q1340.81 651.09%2c 1392 719.9Q1476.03 683.92%2c 1512 767.95z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1440' height='768' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-position: center;
+    background-size:cover;
 }
+
+
 
 .button-container{
-    border:2px solid black;
     padding:10px;
     border-radius: 10px;
-    box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.7);
+    box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.3);
 }
 
-button{
-    cursor: pointer;
-    outline: none;
-    width:120px;
-    height:75px;
+
+
+button {
     font-family: Pattaya,sans-serif;
-    color: white;
-    text-shadow: 0 2px 5px black;
-    background:linear-gradient(to top, #696969, #575757);
-    border:2px solid black;
-    border-radius:7px;
+    background: rgb(39, 39, 39);
+    text-shadow: 0 12px 15px black;
+
+    height: 50px;
+    min-width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s;
+    -webkit-tap-highlight-color: transparent;
+
+    cursor: pointer;
+    padding-top: 5px;
     box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.4) , 
     0 12px 12px 0 rgba(0, 0, 0, 0.3);
 }
-
 button:hover {
-    background:linear-gradient(to bottom, #696969, #575757);
+    background:rgba(0, 0, 0, 0.7);
 }
 
 button:active{
-    transform:translateY(3px);
-    box-shadow:  0 6px 6px 0 rgba(0, 0, 0, 0.3);;
+    transform:translateY(5px);
+    box-shadow:  0 6px 6px 0 rgba(0, 0, 0, 0.8);;
 }
 
