@@ -18,6 +18,11 @@ body{
     background-size:cover;
 }
 
+.text{
+    color:rgb(193, 226, 225);
+    letter-spacing: 2px;
+}
+
 
 
 .button-container{
